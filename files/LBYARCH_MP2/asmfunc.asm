@@ -1,8 +1,8 @@
 ; assembly part using x86-64 syntax
 
 section .data
-hour dq 1000.0 ; 1000M/H
-second dq 3600.0 ; 1/3600 meter per seconds 
+hour dd 1000.0 ; 1000M/H
+second dd 3600.0 ; 1/3600 meter per seconds 
 section .text
 bits 64
 default rel 
@@ -31,9 +31,8 @@ computeAcceleration:
 	MOVSS XMM8, XMM2
 	VDIVSS XMM9, XMM7,XMM8
 
-	; move the result to XMM0
-	MOVSS XMM0,XMM9
-	CVTSS2SI RAX,XMM0 ; convert to integer
+	; move the result to RAX (convert it to integer))
+	CVTSS2SI RAX,XMM9 ; convert to integer
 	ret
 
 
