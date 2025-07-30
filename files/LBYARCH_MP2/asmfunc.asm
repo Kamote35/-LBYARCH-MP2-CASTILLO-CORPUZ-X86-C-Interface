@@ -16,23 +16,24 @@ computeAcceleration:
 	; xmm2 = time
 
 	; XMM3 = Vfinal - Vinit 
-	MOVSD XMM3,XMM1
-	VSUBSD XMM3,XMM3,XMM0 
+	MOVSS XMM3,XMM1
+	VSUBSS XMM3,XMM3,XMM0 
 
 	; XMM5 = (VFinal-Vinit) * hour
-	MOVSD XMM4,[hour] ; XMM4 = hour
-	VMULSD XMM5,XMM3,XMM4 
+	MOVSS XMM4,[hour] ; XMM4 = hour
+	VMULSS XMM5,XMM3,XMM4 
 
 	; XMM7 = ((VFinal-Vinit) * hour) / second
-	MOVSD XMM6, [second] ; XMM6 = second
-	VDIVSD XMM7,XMM5,XMM6 
+	MOVSS XMM6, [second] ; XMM6 = second
+	VDIVSS XMM7,XMM5,XMM6 
 
 	; XMM9 = (((VFinal-Vinit) * hour) / second) / time
-	MOVSD XMM8, XMM2
-	VDIVSD XMM9, XMM7,XMM8
+	MOVSS XMM8, XMM2
+	VDIVSS XMM9, XMM7,XMM8
 
 	; move the result to XMM0
-	MOVSD XMM0,XMM9
+	MOVSS XMM0,XMM9
+	CVTSS2SI RAX,XMM0 ; convert to integer
 	ret
 
 
