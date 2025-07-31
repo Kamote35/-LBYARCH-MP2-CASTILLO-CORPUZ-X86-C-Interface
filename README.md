@@ -29,9 +29,9 @@ The output acceleration values are rounded and returned as integers.
 
 Example:
 
-0.0, 62.5, 10.1 \n
-60.0, 122.3, 5.5 \n 
-30.0, 160.7, 7.8 \n 
+0.0, 62.5, 10.1
+60.0, 122.3, 5.5 
+30.0, 160.7, 7.8 
 
 
 
