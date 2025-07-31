@@ -53,7 +53,9 @@ The average execution time for the program is significantly lower than C being t
 Since the looping is done in C language and the assembly function is being called for every iteration, the average execution time is more faster than expected.
 ## Short Analysis of Performance
 Performing a benchmark of the program, we saw that the time complexity of the function written in assembly executes in the **nanoseconds** range given a small input size, which is typical of algorithms written in assembly.
->Additionally, benchmarking multiple inputs seen from the Execution Time section, we see that the time complexity of the algorithm roughly follows an O(n) growth.
+>Additionally, benchmarking input size in the hundreds to thousands seen from the *Execution Time section*, we see that the time complexity of the algorithm roughly follows an O(n) growth.
+
+
 
 
 
@@ -61,7 +63,11 @@ Performing a benchmark of the program, we saw that the time complexity of the fu
  # Screenshots of the Output with Correctness Check
 
 ![Test Case 1: 3x3 Matrix Input](files/LBYARCH_MP2/images/TestCase1.png)
+
+
 The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
+
+
 **Inputs:**
 ```
 3
@@ -70,12 +76,15 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 30.0 160.7 7.8
 ```
 
+
 **Outputs:**
 ```
 2
 3
 5
 ```
+
+
 **Manual Calculation (to verify): **
 ```
 (((62.5-0.0) x 1000) x 1/3600)/10.1 = 2 (converted to int)
@@ -83,7 +92,10 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 (((160.7 - 30.0) x 1000) x 1/3600)/7.8 = 5 (converted to int)
 ```
 
+
 ![Test Case 2: 4x3 Matrix Input](files/LBYARCH_MP2/images/TestCase2.png)]
+
+
 **Inputs:**
 ```
 4	
@@ -92,6 +104,8 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 10.0 90.0 15.0
 0.0 100.0 12.0
 ```
+
+
 **Outputs:**
 ```
 1
@@ -99,6 +113,7 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 1
 2
 ```
+
 
 **Manual Computations (to verify): **
 ```
