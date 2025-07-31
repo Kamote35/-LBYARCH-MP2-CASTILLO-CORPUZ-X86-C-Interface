@@ -116,3 +116,44 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 (((90.0-10.0) x 1000) x 1/3600)/15.0 = 1 (converted to int)
 (((100.0-0.0) x 1000) x 1/3600)/12.0 = 2 (converted to int)
 ```
+<br><br><br>
+#### **Test 3:**
+![Test Case 3: 7x3 Matrix Input](files/LBYARCH_MP2/images/TestCase3.png)
+
+
+**Inputs:**
+```
+7	
+51.2 51.3 0.9
+51.0 48.7 1.2
+9.7 64.7 0.1
+62.2 36.6 9.1
+24.7 85.6 2.2
+36.4 32.3 1.1
+41.5 43.4 0.5
+```
+
+
+**Outputs:**
+```
+0
+-1
+153
+-1
+8
+-1
+1
+```
+
+
+**Manual Computations (to verify):**
+```
+(((51.3-51.2) x 1000) x 1/3600)/0.9 = 0 (converted to int)
+(((48.7-51.0) x 1000) x 1/3600)/1.2 = -1 (converted to int)
+(((64.7-9.7) x 1000) x 1/3600)/0.1 = 153 (converted to int)
+(((36.6-62.2) x 1000) x 1/3600)/9.1 = -1 (converted to int)
+(((85.6-24.7) x 1000) x 1/3600)/2.2 = 8 (converted to int)
+(((32.6-36.4) x 1000) x 1/3600)/1.1 = -1 (converted to int)
+(((43.4-41.5) x 1000) x 1/3600)/0.5 = 1 (converted to int)
+```
+
