@@ -29,7 +29,7 @@ The output acceleration values are rounded and returned as integers.
 
 Example:
 
-![Example output](images/Output.jpg)
+![Example output](images/Output.png)
 
 
 
