@@ -28,7 +28,10 @@ The output acceleration values are rounded and returned as integers.
   - Column 3: Time (T) in seconds
 
 Example:
-<pre> ``` Matrix (3x3): 1.23 4.56 7.89 0.12 3.45 6.78 9.01 2.34 5.67 ``` </pre>
+
+0.0, 62.5, 10.1 \n
+60.0, 122.3, 5.5 \n 
+30.0, 160.7, 7.8 \n 
 
 
 
