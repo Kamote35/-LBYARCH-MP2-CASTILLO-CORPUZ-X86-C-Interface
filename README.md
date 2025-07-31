@@ -29,7 +29,7 @@ The output acceleration values are rounded and returned as integers.
 
 Example:
 
-![Example output](images/Output.png)
+![Example output](files/LBYARCH_MP2/images/Output.png)
 
 
 
