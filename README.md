@@ -60,7 +60,7 @@ Performing a benchmark of the program, we saw that the time complexity of the fu
 
 
 
- # Screenshots of the Output with Correctness Check
+ ## Screenshots of the Output with Correctness Check
 
 ![Test Case 1: 3x3 Matrix Input](files/LBYARCH_MP2/images/TestCase1.png)
 
