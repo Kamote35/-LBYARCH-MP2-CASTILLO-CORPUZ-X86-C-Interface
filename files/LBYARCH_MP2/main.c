@@ -6,7 +6,7 @@ extern int computeAcceleration(float Vinit, float Vfinal, float time);
 
 #define MAX_ROWS 1000
 #define TRIALS 30
-/* 
+
 int main() {
     int row;
     float array[MAX_ROWS][3];     // Vi, Vf, Time
@@ -52,9 +52,7 @@ int main() {
         printf("%d\n", output[i]);
     }
 
-    // Print average execution time
-    double avgTime = totalTime / (row * TRIALS);
-    printf("\nAverage Execution Time: %.0f ns\n", avgTime);
+ 
 
     return 0;
-}*
+}

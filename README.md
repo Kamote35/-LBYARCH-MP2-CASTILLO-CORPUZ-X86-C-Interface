@@ -46,10 +46,10 @@ Example:
 # Execution Time and Short Analysis of Performance
 
 ## Execution Time
-The asembly function `computeAcceleration` is called from a C program that loops through the input data. The assembly function performs the acceleration calculation using scalar SIMD floating-point instructions.
+Tnanosecondshe asembly function `computeAcceleration` is called from a C program that loops through the input data. The assembly function performs the acceleration calculation using scalar SIMD floating-point instructions.
 We can see the execution time in the following image below with 4 test row sizes mainl<br>y: 10,100,1000,10000.
 ![Execution Example](files/LBYARCH_MP2/images/Execution.png)<br>
-The average execution time for the program is significantly lower than C being the callee , demonstrating the performance benefits of using assembly language for this computation.
+The average execution time for the program is signifiantly lower than C being the callee , demonstrating the performance benefits of using assembly language for this computation.
 Since the looping is done in C language and the assembly function is being called for every iteration, the average execution time is more faster than expected.
 ## Short Analysis of Performance
 Performing a benchmark of the program, we saw that the time complexity of the function written in assembly executes in the **nanoseconds** range given a small input size, which is typical of algorithms written in assembly.
