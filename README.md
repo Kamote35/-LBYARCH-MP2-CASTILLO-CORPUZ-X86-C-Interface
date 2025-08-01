@@ -157,3 +157,5 @@ The given inputs above is formatted as `Vi,Vf, T` for each car in the matrix.
 (((43.4-41.5) x 1000) x 1/3600)/0.5 = 1 (converted to int)
 ```
 
+### ---> Video Demo: https://drive.google.com/file/d/1GdvOFAGLvQsUqMS3hsy89vdeDk7ChzPJ/view?usp=drive_link 
+
